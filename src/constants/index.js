@@ -8,20 +8,14 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  g4s,
+  homeImprovement,
+  des,
+  nexusbot,
+  placeholder,
   threejs,
 } from "../assets";
 
@@ -42,19 +36,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: ".NET Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Web Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Frontend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Photoshop Designer",
     icon: creator,
   },
 ];
@@ -81,20 +75,12 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
   },
   {
     name: "Three JS",
@@ -104,124 +90,109 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "IT Support",
+    company_name: "Your Home Improvements",
+    icon: homeImprovement,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Janurary 2016 - June 2016",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "My duties at this work place included social media management (Facebook, Twitter, Pinterest, Instagram). I also helped to manage Microsoft Excel spreadsheets which had customer information on and times of appointments, etc. I was in charge of making presentations to be displayed around the store for customers to view.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "IT Technical Analyst",
+    company_name: "G4S",
+    icon: g4s,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "September 2019 – August 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Raising and resolving IT requests from various G4S members of staff from every department across the country and internationally, escalating to 2nd Line and 3rd Line teams when needed.",
+      "Creating, modifying and disabling user accounts via Active Directory across multiple domain controllers as well as creating and suspending email accounts when needed with the ability to run reports and audits.",
+      "Remotely fixing internet and VPN issues for clients, installing and repairing software including Microsoft Office.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Oracle DevOps IT Developer",
+    company_name: "DE&S",
+    icon: des,
+    iconBg: "#383E56",
+    date: "August 2020 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I helped build and deploy Oracle APEX Applications.",
+      "Participated in Defect Resolutions for a system wide application",
+      "Maintained and supported fixes on existing but now depreciated applications",
+      "Using JIRA to plan sprints and keep track of current progress, both Scrum and Kanban.",
+    ],
+  },
+  {
+    title: ".NET DevOps IT Developer",
+    company_name: "DE&S",
+    icon: des,
+    iconBg: "#383E56",
+    date: "August 2020 - Present",
+    points: [
+      "Build and deploy .NET Applications using C#",
+      "Maintain and support existing applications within the .NET Stack",
+      "Engaging with all customers closely during End of Sprint reviews, gaining feedback and presenting that to our team.",
+      "Using multiple technologies available within the .NET Stack adapting to all.",
+      "I write Unit Tests for all my work covering all scenarios within my code base while also assisting others in writing there's or helping work out what needs to be tested. I also create functional tests using Playwright.",
     ],
   },
 ];
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    testimonial: "Testimonial here",
+    name: "Name 1 here",
+    designation: "Job Role here",
+    company: "Company Name here",
+    image: "image here",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    testimonial: "Testimonial here",
+    name: "Name 2 here",
+    designation: "Job Role here",
+    company: "Company Name here",
+    image: "image here",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    testimonial: "Testimonial here",
+    name: "Name 3 here",
+    designation: "Job Role here",
+    company: "Company Name here",
+    image: "image here",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "NexusBot",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A quick responsive Discord bot that uses the Tracker Network API to gather live and up-to-date stats for a requested player on a number of games and platforms",
     tags: [
       {
-        name: "react",
+        name: "pyton",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "express",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "API",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: nexusbot,
+    source_code_link: "https://github.com/danblock97/NexusBot",
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "Project 2",
+    description: "Project Description here",
     tags: [
       {
         name: "react",
@@ -236,28 +207,27 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: placeholder,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "Project 3",
+    description: "Project Description here",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "restapi",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "scss",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: placeholder,
     source_code_link: "https://github.com/",
   },
 ];
