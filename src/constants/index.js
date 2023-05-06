@@ -94,25 +94,17 @@ const technologies = [
 
 const experiences = [
   {
-    title: "IT Support",
-    company_name: "Your Home Improvements",
-    icon: homeImprovement,
-    iconBg: "#E6DEDD",
-    date: "Janurary 2016 - June 2016",
-    points: [
-      "My duties at this work place included social media management (Facebook, Twitter, Pinterest, Instagram). I also helped to manage Microsoft Excel spreadsheets which had customer information on and times of appointments, etc. I was in charge of making presentations to be displayed around the store for customers to view.",
-    ],
-  },
-  {
-    title: "IT Technical Analyst",
-    company_name: "G4S",
-    icon: g4s,
+    title: ".NET DevOps IT Developer",
+    company_name: "DE&S",
+    icon: des,
     iconBg: "#383E56",
-    date: "September 2019 – August 2020",
+    date: "August 2020 - Present",
     points: [
-      "Raising and resolving IT requests from various G4S members of staff from every department across the country and internationally, escalating to 2nd Line and 3rd Line teams when needed.",
-      "Creating, modifying and disabling user accounts via Active Directory across multiple domain controllers as well as creating and suspending email accounts when needed with the ability to run reports and audits.",
-      "Remotely fixing internet and VPN issues for clients, installing and repairing software including Microsoft Office.",
+      "Build and deploy .NET Applications using C#",
+      "Maintain and support existing applications within the .NET Stack",
+      "Engaging with all customers closely during End of Sprint reviews, gaining feedback and presenting that to our team.",
+      "Using multiple technologies available within the .NET Stack adapting to all.",
+      "I write Unit Tests for all my work covering all scenarios within my code base while also assisting others in writing there's or helping work out what needs to be tested. I also create functional tests using Playwright.",
     ],
   },
   {
@@ -129,17 +121,25 @@ const experiences = [
     ],
   },
   {
-    title: ".NET DevOps IT Developer",
-    company_name: "DE&S",
-    icon: des,
+    title: "IT Technical Analyst",
+    company_name: "G4S",
+    icon: g4s,
     iconBg: "#383E56",
-    date: "August 2020 - Present",
+    date: "September 2019 – August 2020",
     points: [
-      "Build and deploy .NET Applications using C#",
-      "Maintain and support existing applications within the .NET Stack",
-      "Engaging with all customers closely during End of Sprint reviews, gaining feedback and presenting that to our team.",
-      "Using multiple technologies available within the .NET Stack adapting to all.",
-      "I write Unit Tests for all my work covering all scenarios within my code base while also assisting others in writing there's or helping work out what needs to be tested. I also create functional tests using Playwright.",
+      "Raising and resolving IT requests from various G4S members of staff from every department across the country and internationally, escalating to 2nd Line and 3rd Line teams when needed.",
+      "Creating, modifying and disabling user accounts via Active Directory across multiple domain controllers as well as creating and suspending email accounts when needed with the ability to run reports and audits.",
+      "Remotely fixing internet and VPN issues for clients, installing and repairing software including Microsoft Office.",
+    ],
+  },
+  {
+    title: "IT Support",
+    company_name: "Your Home Improvements",
+    icon: homeImprovement,
+    iconBg: "#E6DEDD",
+    date: "Janurary 2016 - June 2016",
+    points: [
+      "My duties at this work place included social media management (Facebook, Twitter, Pinterest, Instagram). I also helped to manage Microsoft Excel spreadsheets which had customer information on and times of appointments, etc. I was in charge of making presentations to be displayed around the store for customers to view.",
     ],
   },
 ];
