@@ -192,7 +192,7 @@ const projects = [
     source_code_link: "https://github.com/danblock97/NexusBot",
   },
   {
-    name: "Weather.io",
+    name: "Weather Chaser",
     description:
       "Simple React Weather app that uses the OpenWeatherMap API to return the current weather for any City, with the ability to clear your results.",
     tags: [
