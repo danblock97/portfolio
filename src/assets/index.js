@@ -23,6 +23,7 @@ import homeImprovement from "./company/homeImprovement.png";
 
 import nexusbot from "./nexusbot.png";
 import placeholder from "./placeholder.jpg";
+import weatherio from "./weatherio.png";
 
 export {
   logo,
@@ -46,5 +47,6 @@ export {
   des,
   homeImprovement,
   nexusbot,
+  weatherio,
   placeholder,
 };

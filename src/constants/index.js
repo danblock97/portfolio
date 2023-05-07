@@ -15,6 +15,7 @@ import {
   homeImprovement,
   des,
   nexusbot,
+  weatherio,
   placeholder,
   threejs,
 } from "../assets";
@@ -191,24 +192,25 @@ const projects = [
     source_code_link: "https://github.com/danblock97/NexusBot",
   },
   {
-    name: "Project 2",
-    description: "Project Description here",
+    name: "Weather.io",
+    description:
+      "Simple React Weather app that uses the OpenWeatherMap API to return the current weather for any City, with the ability to clear your results.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "OpenWeatherMapAPI",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: placeholder,
-    source_code_link: "https://github.com/",
+    image: weatherio,
+    source_code_link: "https://github.com/danblock97/weather-app-react-main",
   },
   {
     name: "Project 3",
