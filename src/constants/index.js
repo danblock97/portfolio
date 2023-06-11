@@ -15,8 +15,8 @@ import {
   homeImprovement,
   des,
   nexusbot,
+  apexlegends,
   weatherio,
-  placeholder,
   threejs,
 } from "../assets";
 
@@ -213,24 +213,26 @@ const projects = [
     source_code_link: "https://github.com/danblock97/weather-app-react-main",
   },
   {
-    name: "Project 3",
-    description: "Project Description here",
+    name: "React Apex Legends Player Tracker",
+    description:
+      "Simple React app that uses the Apex Legends API from Tracker Network in a backend server using ExpressJS, Axios and CORS which is then called by the frontend to display player stats.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "express",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: placeholder,
-    source_code_link: "https://github.com/",
+    image: apexlegends,
+    source_code_link:
+      "https://github.com/danblock97/apex-legends-tracker-react",
   },
 ];
 
