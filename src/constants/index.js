@@ -95,11 +95,25 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Jira DevOps IT Developer",
+    company_name: "DE&S",
+    icon: des,
+    iconBg: "#383E56",
+    date: "June 2023 - Present",
+    points: [
+      "Build and deploy Jira Projects",
+      "Maintain and support existing Jira projects across the organisation",
+      "Engaging with all customers closely during development and hypercare",
+      "Using JQL to create filters on the fly when needed.",
+      "Monitor the Jira servers and take action when Jira goes down or has issues.",
+    ],
+  },
+  {
     title: ".NET DevOps IT Developer",
     company_name: "DE&S",
     icon: des,
     iconBg: "#383E56",
-    date: "August 2020 - Present",
+    date: "July 2022 - June 2023",
     points: [
       "Build and deploy .NET Applications using C#",
       "Maintain and support existing applications within the .NET Stack",
@@ -113,7 +127,7 @@ const experiences = [
     company_name: "DE&S",
     icon: des,
     iconBg: "#383E56",
-    date: "August 2020 - Present",
+    date: "August 2020 - July 2022",
     points: [
       "I helped build and deploy Oracle APEX Applications.",
       "Participated in Defect Resolutions for a system wide application",
