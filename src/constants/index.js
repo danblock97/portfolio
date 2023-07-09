@@ -15,8 +15,9 @@ import {
   homeImprovement,
   des,
   nexusbot,
-  apexlegends,
-  weatherio,
+  leagueTracker,
+  weatherChaser,
+  todo,
   threejs,
 } from "../assets";
 
@@ -190,7 +191,7 @@ const projects = [
       "A quick responsive Discord bot that uses the Tracker Network API to gather live and up-to-date stats for a requested player on a number of games and platforms",
     tags: [
       {
-        name: "pyton",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
@@ -204,6 +205,7 @@ const projects = [
     ],
     image: nexusbot,
     source_code_link: "https://github.com/danblock97/NexusBot",
+    demo_link: "https://nexusbot.netlify.app/",
   },
   {
     name: "Weather Chaser",
@@ -223,20 +225,21 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: weatherio,
+    image: weatherChaser,
     source_code_link: "https://github.com/danblock97/weather-app-react-main",
+    demo_link: "https://weatherchaser.netlify.app/",
   },
   {
-    name: "React Apex Legends Player Tracker",
+    name: "League Stats Tracker",
     description:
-      "Simple React app that uses the Apex Legends API from Tracker Network in a backend server using ExpressJS, Axios and CORS which is then called by the frontend to display player stats.",
+      "Simple React app that uses the Riot Games API routed through redirects to work as serverless functions which is then called by the frontend to display player stats.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "express",
+        name: "serverless functions",
         color: "green-text-gradient",
       },
       {
@@ -244,9 +247,31 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: apexlegends,
-    source_code_link:
-      "https://github.com/danblock97/apex-legends-tracker-react",
+    image: leagueTracker,
+    source_code_link: "https://github.com/danblock97/lol-stat-tracker",
+    demo_link: "https://leaguetracker.netlify.app/",
+  },
+  {
+    name: "To Do App",
+    description:
+      "Simple React app that uses local storage to save/delete/update your To-Do List, favourite and catigorise your lists here.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "netlify",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: todo,
+    source_code_link: "https://github.com/danblock97/react-todo-app",
+    demo_link: "https://db-todoapp.netlify.app/",
   },
 ];
 

@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import demo from "./demo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -22,8 +23,9 @@ import des from "./company/des.png";
 import homeImprovement from "./company/homeImprovement.png";
 
 import nexusbot from "./nexusbot.png";
-import weatherio from "./weatherio.png";
-import apexlegends from "./apex-legends.png";
+import weatherChaser from "./weatherchaser.png";
+import leagueTracker from "./league-tracker.png";
+import todo from "./todo.png";
 
 export {
   logo,
@@ -32,6 +34,7 @@ export {
   mobile,
   web,
   github,
+  demo,
   menu,
   close,
   css,
@@ -47,6 +50,7 @@ export {
   des,
   homeImprovement,
   nexusbot,
-  apexlegends,
-  weatherio,
+  leagueTracker,
+  weatherChaser,
+  todo,
 };
