@@ -17,7 +17,7 @@ import {
   nexusbot,
   leagueTracker,
   weatherChaser,
-  todo,
+  tudou,
   threejs,
 } from "../assets";
 
@@ -269,7 +269,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: todo,
+    image: tudou,
     source_code_link: "https://github.com/danblock97/react-todo-app",
     demo_link: "https://db-todoapp.netlify.app/",
   },

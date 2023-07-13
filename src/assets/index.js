@@ -25,7 +25,7 @@ import homeImprovement from "./company/homeImprovement.png";
 import nexusbot from "./nexusbot.png";
 import weatherChaser from "./weatherchaser.png";
 import leagueTracker from "./league-tracker.png";
-import todo from "./todo.png";
+import tudou from "./tudou.png";
 
 export {
   logo,
@@ -52,5 +52,5 @@ export {
   nexusbot,
   leagueTracker,
   weatherChaser,
-  todo,
+  tudou,
 };
