@@ -271,7 +271,7 @@ const projects = [
     ],
     image: tudou,
     source_code_link: "https://github.com/danblock97/react-todo-app",
-    demo_link: "https://db-todoapp.netlify.app/",
+    demo_link: "https://react-tudou.netlify.app",
   },
 ];
 
