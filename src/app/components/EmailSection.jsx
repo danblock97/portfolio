@@ -20,7 +20,7 @@ const EmailSection = () => {
 		try {
 			const response = await emailjs.send(
 				"service_1jynos5",
-				"template_vwofrh9",
+				"template_pii31hn",
 				data,
 				"0ZRDXEAWbxZ7BsOU8"
 			);
