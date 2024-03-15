@@ -19,10 +19,10 @@ const EmailSection = () => {
 
 		try {
 			const response = await emailjs.send(
-				"service_1jynos5", // Your service ID
-				"template_vwofrh9", // Your template ID
+				"service_1jynos5",
+				"template_vwofrh9",
 				data,
-				"0ZRDXEAWbxZ7BsOU8" // Your user ID
+				"0ZRDXEAWbxZ7BsOU8"
 			);
 
 			if (response.status === 200) {

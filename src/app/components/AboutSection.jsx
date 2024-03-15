@@ -65,10 +65,15 @@ const AboutSection = () => {
 				<div className="mt-4 md:mt-0 text-left flex flex-col h-full">
 					<h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
 					<p className="text-base lg:text-lg">
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
-						nobis libero soluta tempora dolorum eum maxime laboriosam odio,
-						alias assumenda omnis aliquam aut a, explicabo sapiente eveniet
-						aspernatur impedit magni.
+						I am a multifaceted professional skilled in web development,
+						Jira/Confluence administration, and UI/UX design. With a passion for
+						creating seamless digital experiences, I thrive on blending
+						creativity with technical expertise to bring innovative solutions to
+						life. Whether it's crafting user-friendly interfaces, configuring
+						Jira/Confluence environments for optimal collaboration, or
+						developing dynamic websites, I am dedicated to delivering projects
+						that exceed expectations. Explore my work and discover how I can
+						help bring your digital vision to reality.
 					</p>
 					<div className="flex flex-row mt-8">
 						<TabButton
