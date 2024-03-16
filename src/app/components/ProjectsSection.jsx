@@ -13,7 +13,7 @@ const projectsData = [
 		image: "/images/projects/astrostats.png",
 		tag: ["All", "Web"],
 		gitUrl: "https://github.com/danblock97/AstroStats",
-		previewUrl: "/",
+		previewUrl: "https://astrostats.vercel.app",
 	},
 	{
 		id: 2,
