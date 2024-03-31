@@ -17,12 +17,13 @@ const projectsData = [
 	},
 	{
 		id: 2,
-		title: "Project 2",
-		description: "Project 2 description",
-		image: "/images/projects/placeholder.jpg",
+		title: "Sky Watcher",
+		description:
+			"Sky Watcher is a a web app that allows you to search for a City and get the current weather, time and wind speed. It uses the OpenWeatherMap API.",
+		image: "/images/projects/sky-watcher.png",
 		tag: ["All", "Web"],
-		gitUrl: "/",
-		previewUrl: "/",
+		gitUrl: "https://github.com/danblock97/sky-watcher",
+		previewUrl: "https://skywatcher.vercel.app",
 	},
 	{
 		id: 3,
