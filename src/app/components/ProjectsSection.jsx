@@ -38,11 +38,12 @@ const projectsData = [
 	{
 		id: 4,
 		title: "Project 4",
-		description: "Project 4 description",
-		image: "/images/projects/placeholder.jpg",
+		description:
+			"Forti Finder is a web app that allows you to search for any Fortnite player and get their stats. It uses the Fortnite API as well as NextJS 14 App Router. It is hosted on Vercel.",
+		image: "/images/projects/fortiFinder.png",
 		tag: ["All", "Mobile"],
-		gitUrl: "/",
-		previewUrl: "/",
+		gitUrl: "https://github.com/danblock97/fortnite-tracker",
+		previewUrl: "https://fortifinder.vercel.app/",
 	},
 	{
 		id: 5,
