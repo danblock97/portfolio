@@ -27,12 +27,13 @@ const projectsData = [
 	},
 	{
 		id: 3,
-		title: "Project 3",
-		description: "Project 3 description",
-		image: "/images/projects/placeholder.jpg",
+		title: "Apex Pulse",
+		description:
+			"Apex Pulse is a web app that allows you to search for any Apex legends player and get their stats. It uses the Apex Legends API as well as NextJS 14 App Router. It is hosted on Vercel.",
+		image: "/images/projects/apexPulse.png",
 		tag: ["All", "Web"],
-		gitUrl: "/",
-		previewUrl: "/",
+		gitUrl: "https://github.com/danblock97/apex-tracker",
+		previewUrl: "https://apexpulse.vercel.app",
 	},
 	{
 		id: 4,
