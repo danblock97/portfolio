@@ -47,9 +47,10 @@ const projectsData = [
 	},
 	{
 		id: 5,
-		title: "Project 4",
-		description: "Project 4 description",
-		image: "/images/projects/placeholder.jpg",
+		title: "League Luminaries",
+		description:
+			"League Luminaries is a web app that allows you to search for any League of Legends player and get their stats, match history and match details. It uses the Riot API as well as NextJS 14 App Router. It is hosted on Vercel.",
+		image: "/images/projects/league-luminaries.jpg",
 		tag: ["All", "Web"],
 		gitUrl: "/",
 		previewUrl: "/",
@@ -58,10 +59,10 @@ const projectsData = [
 		id: 6,
 		title: "Project 5",
 		description: "Project 5 description",
-		image: "/images/projects/placeholder.jpg",
+		image: "/images/projects/placeholder.png",
 		tag: ["All", "Web"],
-		gitUrl: "/",
-		previewUrl: "/",
+		gitUrl: "https://github.com/danblock97/lol-tracker",
+		previewUrl: "https://league-luminaries.vercel.app/",
 	},
 ];
 
