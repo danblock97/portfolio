@@ -50,7 +50,7 @@ const projectsData = [
 		title: "League Luminaries",
 		description:
 			"League Luminaries is a web app that allows you to search for any League of Legends player and get their stats, match history and match details. It uses the Riot API as well as NextJS 14 App Router. It is hosted on Vercel.",
-		image: "/images/projects/league-luminaries.jpg",
+		image: "/images/projects/league-luminaries.png",
 		tag: ["All", "Web"],
 		gitUrl: "/",
 		previewUrl: "/",
