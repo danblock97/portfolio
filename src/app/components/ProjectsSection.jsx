@@ -47,13 +47,13 @@ const projectsData = [
 	},
 	{
 		id: 5,
-		title: "League Luminaries",
+		title: "RiftSpy.GG",
 		description:
-			"League Luminaries is a web app that allows you to search for any League of Legends player and get their stats, match history and match details. It uses the Riot API as well as NextJS 14 App Router. It is hosted on Vercel.",
-		image: "/images/projects/league-luminaries.png",
+			"RiftSpy.GG is a web app that allows you to search for any League of Legends player and get their stats, match history and match details. It uses the Riot API as well as NextJS 14 App Router. It is hosted on Vercel.",
+		image: "/images/projects/rift-spy.png",
 		tag: ["All", "Web"],
-		gitUrl: "/",
-		previewUrl: "/",
+		gitUrl: "https://github.com/danblock97/lol-tracker",
+		previewUrl: "https://riftspy.vercel.app/",
 	},
 	{
 		id: 6,
@@ -61,8 +61,8 @@ const projectsData = [
 		description: "Project 5 description",
 		image: "/images/projects/placeholder.png",
 		tag: ["All", "Web"],
-		gitUrl: "https://github.com/danblock97/lol-tracker",
-		previewUrl: "https://league-luminaries.vercel.app/",
+		gitUrl: "/",
+		previewUrl: "/",
 	},
 ];
 
