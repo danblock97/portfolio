@@ -57,12 +57,12 @@ const projectsData = [
 	},
 	{
 		id: 6,
-		title: "Project 5",
-		description: "Project 5 description",
-		image: "/images/projects/placeholder.png",
+		title: "Mood Catcher",
+		description: "Mood Catcher is a versatile and user-friendly app designed to help you log and monitor your mood, add journal entries, and track your emotional well-being over a 30-day period.",
+		image: "/images/projects/MoodCatcher.webp",
 		tag: ["All", "Web"],
-		gitUrl: "/",
-		previewUrl: "/",
+		gitUrl: "https://github.com/danblock97/mental-health-tracker",
+		previewUrl: "https://www.moodcatcher.net",
 	},
 ];
 
