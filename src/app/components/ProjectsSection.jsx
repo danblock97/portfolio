@@ -47,18 +47,19 @@ const projectsData = [
 	},
 	{
 		id: 5,
-		title: "RiftSpy.GG",
+		title: "ClutchGG",
 		description:
-			"RiftSpy.GG is a web app that allows you to search for any League of Legends player and get their stats, match history and match details. It uses the Riot API as well as NextJS 14 App Router. It is hosted on Vercel.",
+			"ClutchGG is a web app that focuses on player tracking and analytics for most Riot games including LoL, TFT and Valorant.",
 		image: "/images/projects/rift-spy.png",
 		tag: ["All", "Web"],
-		gitUrl: "https://github.com/danblock97/lol-tracker",
-		previewUrl: "https://riftspy.vercel.app/",
+		gitUrl: "https://github.com/danblock97/clutch-gg",
+		previewUrl: "https://clutchgg.vercel.app/",
 	},
 	{
 		id: 6,
 		title: "Mood Catcher",
-		description: "Mood Catcher is a versatile and user-friendly app designed to help you log and monitor your mood, add journal entries, and track your emotional well-being over a 30-day period.",
+		description:
+			"Mood Catcher is a versatile and user-friendly app designed to help you log and monitor your mood, add journal entries, and track your emotional well-being over a 30-day period.",
 		image: "/images/projects/MoodCatcher.webp",
 		tag: ["All", "Web"],
 		gitUrl: "https://github.com/danblock97/mental-health-tracker",
