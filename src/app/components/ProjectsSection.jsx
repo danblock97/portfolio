@@ -37,13 +37,13 @@ const projectsData = [
 	},
 	{
 		id: 4,
-		title: "Forti Finder",
+		title: "SwiftTasks",
 		description:
-			"Forti Finder is a web app that allows you to search for any Fortnite player and get their stats. It uses the Fortnite API as well as NextJS 14 App Router. It is hosted on Vercel.",
-		image: "/images/projects/fortiFinder.png",
-		tag: ["All", "Mobile"],
-		gitUrl: "https://github.com/danblock97/fortnite-tracker",
-		previewUrl: "https://fortifinder.vercel.app/",
+			"SiwftTasks is a comprehensive ToDo application allowing you to create tasks and subtasks to help keep track of your daily life. Categorise and prioritise your tasks to help manage everything",
+		image: "/images/projects/SwiftTasks.jpg",
+		tag: ["All", "Mobile", "Web", "Desktop"],
+		gitUrl: "https://github.com/danblock97/swifttasks",
+		previewUrl: "https://swifttasks.co.uk",
 	},
 	{
 		id: 5,
@@ -62,7 +62,7 @@ const projectsData = [
 			"Mood Catcher is a versatile and user-friendly app designed to help you log and monitor your mood, add journal entries, and track your emotional well-being over a 30-day period.",
 		image: "/images/projects/MoodCatcher.webp",
 		tag: ["All", "Web"],
-		gitUrl: "https://github.com/danblock97/mental-health-tracker",
+		gitUrl: "https://github.com/danblock97/mental-tracker",
 		previewUrl: "https://www.moodcatcher.net",
 	},
 ];
