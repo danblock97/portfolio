@@ -17,16 +17,6 @@ const projectsData = [
 	},
 	{
 		id: 2,
-		title: "Sky Watcher",
-		description:
-			"Sky Watcher is a a web app that allows you to search for a City and get the current weather, time and wind speed. It uses the OpenWeatherMap API.",
-		image: "/images/projects/sky-watcher.png",
-		tag: ["All", "Web"],
-		gitUrl: "https://github.com/danblock97/sky-watcher",
-		previewUrl: "https://skywatcher.vercel.app",
-	},
-	{
-		id: 3,
 		title: "Apex Pulse",
 		description:
 			"Apex Pulse is a web app that allows you to search for any Apex legends player and get their stats. It uses the Apex Legends API as well as NextJS 14 App Router. It is hosted on Vercel.",
@@ -36,17 +26,17 @@ const projectsData = [
 		previewUrl: "https://apexpulse.vercel.app",
 	},
 	{
-		id: 4,
+		id: 3,
 		title: "SwiftTasks",
 		description:
-			"SiwftTasks is a comprehensive ToDo application allowing you to create tasks and subtasks to help keep track of your daily life. Categorise and prioritise your tasks to help manage everything",
+			"SwiftTasks is a comprehensive ToDo application allowing you to create tasks and subtasks to help keep track of your daily life. Categorise and prioritise your tasks to help manage everything",
 		image: "/images/projects/SwiftTasks.jpg",
 		tag: ["All", "Mobile", "Web", "Desktop"],
 		gitUrl: "https://github.com/danblock97/swifttasks",
 		previewUrl: "https://swifttasks.co.uk",
 	},
 	{
-		id: 5,
+		id: 4,
 		title: "ClutchGG",
 		description:
 			"ClutchGG is a web app that focuses on player tracking and analytics for most Riot games including LoL, TFT and Valorant.",
@@ -56,13 +46,13 @@ const projectsData = [
 		previewUrl: "https://clutchgg.vercel.app/",
 	},
 	{
-		id: 6,
+		id: 5,
 		title: "Mood Catcher",
 		description:
 			"Mood Catcher is a versatile and user-friendly app designed to help you log and monitor your mood, add journal entries, and track your emotional well-being over a 30-day period.",
 		image: "/images/projects/MoodCatcher.webp",
 		tag: ["All", "Web"],
-		gitUrl: "https://github.com/danblock97/mental-tracker",
+		gitUrl: "",
 		previewUrl: "https://www.moodcatcher.net",
 	},
 ];

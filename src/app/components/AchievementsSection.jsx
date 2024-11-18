@@ -18,7 +18,7 @@ const achievementsList = [
 	{
 		prefix: "~",
 		metric: "Users",
-		value: "220",
+		value: "300",
 	},
 	{
 		metric: "Awards",
