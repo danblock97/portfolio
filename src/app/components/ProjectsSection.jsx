@@ -39,11 +39,11 @@ const projectsData = [
 		id: 4,
 		title: "ClutchGG",
 		description:
-			"ClutchGG is a web app that focuses on player tracking and analytics for most Riot games including LoL, TFT and Valorant.",
+			"ClutchGG is a web app that focuses on player tracking and analytics for League of Legends",
 		image: "/images/projects/rift-spy.png",
 		tag: ["All", "Web"],
 		gitUrl: "https://github.com/danblock97/clutch-gg",
-		previewUrl: "https://clutchgg.vercel.app/",
+		previewUrl: "https://clutchgg.lol/",
 	},
 	{
 		id: 5,
