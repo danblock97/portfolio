@@ -35,6 +35,16 @@ const projectsData = [
 		gitUrl: "",
 		previewUrl: "https://diversediaries.com/",
 	},
+	{
+		id: 4,
+		title: "SwiftTasks",
+		description:
+			"SwiftTasks is a lightweight all in one ToDo List, Project Management & Documentation Wiki Builder for Solo Developers & Small Startups",
+		image: "/images/projects/swifttasks.png",
+		tag: ["All", "Web"],
+		gitUrl: "",
+		previewUrl: "https://swifttasks.co.uk/",
+	},
 ];
 
 const ProjectsSection = () => {
