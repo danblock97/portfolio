@@ -25,26 +25,6 @@ const projectsData = [
 		gitUrl: "https://github.com/danblock97/clutch-gg",
 		previewUrl: "https://clutchgg.lol/",
 	},
-	{
-		id: 3,
-		title: "Diverse Diaries",
-		description:
-			"Diverse Diaries is a NextJS 15 Blog Application that allows users to create, read, update, and delete blog posts.",
-		image: "/images/projects/diversediaries.png",
-		tag: ["All", "Web"],
-		gitUrl: "",
-		previewUrl: "https://diversediaries.com/",
-	},
-	{
-		id: 4,
-		title: "SwiftTasks",
-		description:
-			"SwiftTasks is a lightweight all in one ToDo List, Project Management & Documentation Wiki Builder for Solo Developers & Small Startups",
-		image: "/images/projects/swifttasks.png",
-		tag: ["All", "Web"],
-		gitUrl: "",
-		previewUrl: "https://swifttasks.co.uk/",
-	},
 ];
 
 const ProjectsSection = () => {
