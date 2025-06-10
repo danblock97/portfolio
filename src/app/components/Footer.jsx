@@ -2,21 +2,23 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
 	const socialLinks = [
-		{ name: "GitHub", href: "https://github.com/danblock97", icon: "github" },
+		{ name: "GitHub", href: "https://github.com/danblock97", icon: FaGithub },
 		{
 			name: "LinkedIn",
-			href: "https://linkedin.com/in/danblock97",
-			icon: "linkedin",
+			href: "https://linkedin.com/in/dan-block-mbcs-40756b18a/",
+			icon: FaLinkedin,
 		},
 		{
-			name: "Twitter",
-			href: "https://twitter.com/danblock97",
-			icon: "twitter",
+			name: "X",
+			href: "https://x.com/generalgoldiez",
+			icon: FaXTwitter,
 		},
 	];
 
@@ -90,21 +92,22 @@ const Footer = () => {
 					>
 						<h4 className="text-white font-semibold mb-4">Connect</h4>
 						<div className="flex space-x-4">
-							{socialLinks.map((social) => (
-								<motion.a
-									key={social.name}
-									href={social.href}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="w-10 h-10 bg-gray-800 hover:bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300"
-									whileHover={{ scale: 1.1, y: -2 }}
-									whileTap={{ scale: 0.95 }}
-								>
-									<span className="text-gray-400 hover:text-white text-sm font-semibold">
-										{social.icon.charAt(0).toUpperCase()}
-									</span>
-								</motion.a>
-							))}
+							{socialLinks.map((social) => {
+								const IconComponent = social.icon;
+								return (
+									<motion.a
+										key={social.name}
+										href={social.href}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="w-10 h-10 bg-gray-800 hover:bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300"
+										whileHover={{ scale: 1.1, y: -2 }}
+										whileTap={{ scale: 0.95 }}
+									>
+										<IconComponent className="text-gray-400 hover:text-white text-lg" />
+									</motion.a>
+								);
+							})}
 						</div>
 					</motion.div>
 				</div>
