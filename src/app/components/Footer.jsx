@@ -31,7 +31,7 @@ const Footer = () => {
 
 	return (
 		<motion.footer
-			className="relative bg-gradient-to-r from-[#0a0a0a] to-[#1a1a1a] border-t border-[#33353F] h-screen"
+			className="relative bg-gradient-to-r from-[#0a0a0a] to-[#1a1a1a] border-t border-[#33353F] py-12 overflow-hidden"
 			initial={{ opacity: 0, y: 50 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.6 }}
