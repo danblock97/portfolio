@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { useState, useTransition } from "react";
 import TabButton from "./TabButton";
+import { motion, AnimatePresence } from "framer-motion";
 
 const tab_data = [
 	{
@@ -63,7 +64,7 @@ const AboutSection = () => {
 					height={500}
 					width={500}
 				/>
-				<div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+				<div className="mt-4 md:mt-0 text-left flex flex-col h-full overflow-hidden">
 					<h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
 					<p className="text-base lg:text-lg">
 						I am a multifaceted professional skilled in web development,
@@ -96,9 +97,18 @@ const AboutSection = () => {
 							Experience
 						</TabButton>
 					</div>
-					<div className="mt-8">
-						{tab_data.find((t) => t.id === tab).content}
-					</div>
+					<AnimatePresence mode="wait">
+						<motion.div
+							key={tab}
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							exit={{ opacity: 0 }}
+							transition={{ duration: 0.4, ease: "easeInOut" }}
+							className="mt-8 h-60 overflow-y-auto"
+						>
+							{tab_data.find((t) => t.id === tab).content}
+						</motion.div>
+					</AnimatePresence>
 				</div>
 			</div>
 		</section>
