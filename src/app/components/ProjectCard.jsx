@@ -25,8 +25,8 @@ const ProjectCard = ({
 		>
 			<FloatingCard className="h-full">
 				<div
-					className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden"
-					style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
+					className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden bg-center bg-no-repeat bg-cover"
+					style={{ backgroundImage: `url(${imgUrl})` }}
 				>
 					{/* Gradient overlay */}
 					<div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

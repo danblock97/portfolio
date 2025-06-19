@@ -12,7 +12,7 @@ const projectsData = [
 			"A fully functional Discord Bot built entirely with Python. Hosted with 95% uptime. You can invite it from the link below where you can also check out the commands available.",
 		image: "/images/projects/astrostats.png",
 		tag: ["All", "Web"],
-		gitUrl: "",
+		gitUrl: "https://github.com/danblock97/AstroStats",
 		previewUrl: "https://astrostats.info/",
 	},
 	{
@@ -20,9 +20,9 @@ const projectsData = [
 		title: "ClutchGG",
 		description:
 			"ClutchGG is a web app that focuses on player tracking and analytics for League of Legends & Teamfight Tactics",
-		image: "/images/projects/rift-spy.png",
+		image: "/images/projects/clutchgg.png",
 		tag: ["All", "Web"],
-		gitUrl: "",
+		gitUrl: "https://github.com/danblock97/clutch-gg",
 		previewUrl: "https://clutchgg.lol/",
 	},
 	{
@@ -30,9 +30,9 @@ const projectsData = [
 		title: "Scheduler",
 		description:
 			"Schedulr is a connected workspace for everything you’re working on",
-		image: "/images/projects/scheduler.png",
+		image: "/images/projects/schedulr.png",
 		tag: ["All", "Web"],
-		gitUrl: "",
+		gitUrl: "https://github.com/danblock97/schedulr",
 		previewUrl: "https://scheduler.co.uk/",
 	},
 ];
