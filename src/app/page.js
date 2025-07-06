@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import EnhancedNavbar from "./components/EnhancedNavbar";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
+import PricingSection from "./components/PricingSection";
 
 const containerVariants = {
 	initial: { opacity: 0 },
@@ -70,6 +71,9 @@ export default function Home() {
 					</motion.div>
 					<motion.div variants={itemVariants}>
 						<AchievementsSection />
+					</motion.div>
+					<motion.div variants={itemVariants}>
+						<PricingSection />
 					</motion.div>
 				</motion.div>
 			</main>
