@@ -25,16 +25,6 @@ const projectsData = [
 		gitUrl: "https://github.com/danblock97/clutch-gg",
 		previewUrl: "https://clutchgg.lol/",
 	},
-	{
-		id: 3,
-		title: "Scheduler",
-		description:
-			"Schedulr is a connected workspace for everything you’re working on",
-		image: "/images/projects/schedulr.png",
-		tag: ["All", "Web"],
-		gitUrl: "https://github.com/danblock97/schedulr",
-		previewUrl: "https://scheduler.co.uk/",
-	},
 ];
 
 const ProjectsSection = () => {
