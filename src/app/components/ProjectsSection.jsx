@@ -12,7 +12,7 @@ const projectsData = [
 			"A fully functional Discord Bot built entirely with Python. Hosted with 95% uptime. You can invite it from the link below where you can also check out the commands available.",
 		image: "/images/projects/astrostats.png",
 		tag: ["All", "Web"],
-		gitUrl: "https://github.com/danblock97/AstroStats",
+		gitUrl: "",
 		previewUrl: "https://astrostats.info/",
 	},
 	{
@@ -22,8 +22,18 @@ const projectsData = [
 			"ClutchGG is a web app that focuses on player tracking and analytics for League of Legends & Teamfight Tactics",
 		image: "/images/projects/clutchgg.png",
 		tag: ["All", "Web"],
-		gitUrl: "https://github.com/danblock97/clutch-gg",
+		gitUrl: "",
 		previewUrl: "https://clutchgg.lol/",
+	},
+	{
+		id: 3,
+		title: "Curately",
+		description:
+			"The all in one link in bio platform that doesn't suck. Create a link in bio page for your social media accounts and share it with your audience.",
+		image: "/images/projects/curately.png",
+		tag: ["All", "Web"],
+		gitUrl: "",
+		previewUrl: "https://curately.co.uk/",
 	},
 ];
 
