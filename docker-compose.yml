@@ -1,11 +1,12 @@
 services:
-  portfolio:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
-    # Publish ports only for local runs
-    # Dokploy should not bind a host port; it will route internally
-    ports:
-      - "${PORT:-3000}:80" # host:container (Nginx serves on 80 in the image)
+    image: portfolio-webpage:local
+    environment:
+      - NODE_ENV=production
+    # Do not publish host ports here; Dokploy will route internally
+    expose:
+      - "80"
     restart: unless-stopped
-    profiles: ["local"]
