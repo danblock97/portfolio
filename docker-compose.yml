@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80" # host:container (Nginx serves on 80 in the image)
+    restart: unless-stopped
+
