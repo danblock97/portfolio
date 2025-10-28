@@ -1,9 +1,0 @@
-services:
-  portfolio:
-    build:
-      context: .
-      target: production
-    environment:
-      NODE_ENV: production
-      NEXT_TELEMETRY_DISABLED: "1"
-    working_dir: /app
