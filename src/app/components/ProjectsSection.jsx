@@ -35,6 +35,16 @@ const projectsData = [
 		gitUrl: "",
 		previewUrl: "https://curately.co.uk/",
 	},
+	{
+		id: 4,
+		title: "Schedulr",
+		description:
+			"A joint calendar scheduling app for iOS that helps you coordinate and schedule events with others seamlessly.",
+		image: "/images/projects/schedulr.png",
+		tag: ["All", "Mobile"],
+		gitUrl: "",
+		previewUrl: "https://apps.apple.com/gb/app/schedulr/id6754965988",
+	},
 ];
 
 const ProjectsSection = () => {
