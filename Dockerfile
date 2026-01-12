@@ -16,12 +16,10 @@ COPY . .
 CMD ["npm", "run", "dev"]
 
 # Build the static export
-FROM node:20-alpine AS build
+FROM base AS build
 WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
-COPY package.json package-lock.json ./
-RUN npm ci
 COPY . .
 RUN npm run build
 
