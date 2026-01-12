@@ -4,7 +4,7 @@ ENV NEXT_TELEMETRY_DISABLED=1
 
 # Install all dependencies once for caching
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm ci --loglevel=verbose
 
 # Development image
 FROM node:20-alpine AS development
