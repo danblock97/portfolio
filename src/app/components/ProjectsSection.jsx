@@ -26,16 +26,6 @@ const projectsData = [
 		previewUrl: "https://clutchgg.lol/",
 	},
 	{
-		id: 3,
-		title: "Curately",
-		description:
-			"The all in one link in bio platform that doesn't suck. Create a link in bio page for your social media accounts and share it with your audience.",
-		image: "/images/projects/curately.png",
-		tag: ["All", "Web"],
-		gitUrl: "",
-		previewUrl: "https://curately.co.uk/",
-	},
-	{
 		id: 4,
 		title: "Schedulr",
 		description:
