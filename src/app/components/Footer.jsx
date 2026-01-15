@@ -17,7 +17,7 @@ const Footer = () => {
 		},
 		{
 			name: "X",
-			href: "https://x.com/generalgoldiez",
+			href: "https://x.com/goldiez2599",
 			icon: FaXTwitter,
 		},
 	];

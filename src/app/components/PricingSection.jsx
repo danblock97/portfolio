@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 
 
@@ -44,9 +45,12 @@ const PricingSection = () => {
 							</li>
 						))}
 					</ul>
-					<button className="w-full py-3 rounded-lg font-semibold bg-purple-500 hover:bg-purple-600 transition-colors duration-300 mb-8">
+					<Link
+						href="/contact"
+						className="block w-full py-3 rounded-lg font-semibold bg-purple-500 hover:bg-purple-600 transition-colors duration-300 mb-8 text-center"
+					>
 						Get Started
-					</button>
+					</Link>
 					<div className="text-center text-gray-400 mt-12">
 						<p className="text-lg">Domain names can be purchased for 1 year or more. The final domain pricing will be added to your total, depending on your chosen domain and desired registration period.</p>
 						<p className="mt-4">Hosting costs are determined based on your needs and will be quoted separately.</p>
