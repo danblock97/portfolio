@@ -35,6 +35,16 @@ const projectsData = [
 		gitUrl: "",
 		previewUrl: "https://apps.apple.com/gb/app/schedulr/id6754965988",
 	},
+	{
+		id: 5,
+		title: "Pixlet",
+		description:
+			"Resize, crop, compress, and convert images online. Professional tools for everyone.",
+		image: "/images/projects/pixlet.png",
+		tag: ["All", "Mobile"],
+		gitUrl: "",
+		previewUrl: "https://pixlet.co.uk/",
+	},
 ];
 
 const ProjectsSection = () => {
