@@ -1,57 +1,42 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import FloatingCard from "./FloatingCard";
 
-const ProjectCard = ({
-	imgUrl,
-	title,
-	description,
-	gitUrl,
-	previewUrl,
-	index = 0,
-}) => {
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import { motion } from "framer-motion";
+
+const ProjectCard = ({ imgUrl, title, description, previewUrl, index = 0 }) => {
 	return (
-		<motion.div
-			initial={{ opacity: 0, y: 50 }}
+		<motion.article
+			className="surface-soft overflow-hidden"
+			initial={{ opacity: 0, y: 18 }}
 			animate={{ opacity: 1, y: 0 }}
-			transition={{
-				duration: 0.5,
-				delay: index * 0.1,
-				ease: "easeOut",
-			}}
+			transition={{ duration: 0.28, delay: index * 0.06 }}
 		>
-			<Link href={previewUrl} target="_blank" rel="noopener noreferrer" className="block">
-				<FloatingCard className="h-full cursor-pointer hover:scale-[1.02] transition-transform duration-300">
-					<div
-						className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden bg-center bg-no-repeat bg-cover"
-						style={{ backgroundImage: `url(${imgUrl})` }}
-					>
-						{/* Gradient overlay */}
-						<div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+			<Link
+				href={previewUrl}
+				target="_blank"
+				rel="noopener noreferrer"
+				className="block h-full"
+			>
+				<div className="relative h-44 overflow-hidden sm:h-52">
+					<Image
+						src={imgUrl}
+						alt={title}
+						fill
+						sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+						className="object-cover"
+					/>
+				</div>
+				<div className="space-y-3 p-4">
+					<div className="flex items-start justify-between gap-3">
+						<h3 className="text-xl font-semibold">{title}</h3>
+						<ArrowTopRightOnSquareIcon className="h-5 w-5 shrink-0 text-[var(--muted)]" />
 					</div>
-					<div className="text-white p-6">
-						<motion.h5
-							className="text-xl font-semibold mb-3 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							transition={{ delay: 0.2 }}
-						>
-							{title}
-						</motion.h5>
-						<motion.p
-							className="text-[#ADB7BE] leading-relaxed"
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							transition={{ delay: 0.3 }}
-						>
-							{description}
-						</motion.p>
-					</div>
-				</FloatingCard>
+					<p className="text-sm text-[var(--muted)]">{description}</p>
+				</div>
 			</Link>
-		</motion.div>
+		</motion.article>
 	);
 };
 

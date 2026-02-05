@@ -1,15 +1,20 @@
 import React from "react";
 
-const TabButton = ({ active, selectTab, children }) => {
-	const buttonClasses = active
-		? "text-white border-b border-orange-500"
-		: "text-[#adb7be]";
-
+const TabButton = ({ id, active, selectTab, children }) => {
 	return (
-		<button onClick={selectTab}>
-			<p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
-				{children}
-			</p>
+		<button
+			type="button"
+			id={`${id}-tab`}
+			role="tab"
+			aria-selected={active}
+			onClick={selectTab}
+			className={`rounded-full px-4 py-2 text-sm font-medium transition-colors sm:text-base ${
+				active
+					? "bg-[var(--brand)] text-white"
+					: "surface-soft text-[var(--muted)] hover:text-[var(--text)]"
+			}`}
+		>
+			{children}
 		</button>
 	);
 };

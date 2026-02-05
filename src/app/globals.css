@@ -3,31 +3,215 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	color-scheme: light;
+	--bg: #f4f1eb;
+	--surface: #ffffff;
+	--surface-2: #ebe5db;
+	--text: #202632;
+	--muted: #5e6877;
+	--border: #d5cec2;
+	--brand: #2f5f68;
+	--brand-strong: #254a51;
+	--accent: #bd8358;
+	--shadow: 0 14px 36px rgba(26, 30, 37, 0.08);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+[data-theme="dark"] {
+	color-scheme: dark;
+	--bg: #171b22;
+	--surface: #1f252d;
+	--surface-2: #262d37;
+	--text: #ecf2fa;
+	--muted: #a8b2bf;
+	--border: #38404c;
+	--brand: #8ab9b0;
+	--brand-strong: #a7cbc4;
+	--accent: #d7a67f;
+	--shadow: 0 14px 36px rgba(0, 0, 0, 0.28);
+}
+
+* {
+	border-color: var(--border);
+}
+
+html,
+body {
+	background: var(--bg);
+	color: var(--text);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	font-family: var(--font-sans), sans-serif;
+	line-height: 1.6;
+	text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-display), serif;
+	letter-spacing: -0.02em;
+	line-height: 1.15;
+}
+
+a {
+	color: inherit;
+}
+
+::selection {
+	background: color-mix(in oklab, var(--brand) 26%, transparent);
+}
+
+.site-shell {
+	min-height: 100vh;
+	background: var(--bg);
+}
+
+.page-main {
+	padding: 5.5rem 1.25rem 2rem;
+}
+
+.content-wrap {
+	width: min(1120px, 100%);
+	margin-inline: auto;
+}
+
+.section-stack {
+	display: grid;
+	gap: 1.25rem;
+}
+
+.surface-card {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 1.5rem;
+	box-shadow: var(--shadow);
+}
+
+.surface-soft {
+	background: var(--surface-2);
+	border: 1px solid var(--border);
+	border-radius: 1.25rem;
+}
+
+.eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.35rem 0.85rem;
+	border-radius: 999px;
+	background: var(--surface-2);
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--muted);
+}
+
+.section-title {
+	font-size: clamp(1.85rem, 4.2vw, 3.2rem);
+	font-weight: 700;
+	color: var(--text);
+}
+
+.section-copy {
+	font-size: clamp(1rem, 1.45vw, 1.12rem);
+	color: var(--muted);
+}
+
+.button-primary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	padding: 0.78rem 1.2rem;
+	border-radius: 999px;
+	background: var(--brand);
+	color: #fff;
+	font-weight: 600;
+	border: 1px solid transparent;
+	transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.button-primary:hover {
+	background: var(--brand-strong);
+}
+
+.button-secondary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	padding: 0.78rem 1.2rem;
+	border-radius: 999px;
+	background: transparent;
+	border: 1px solid var(--border);
+	color: var(--text);
+	font-weight: 600;
+	transition: background-color 180ms ease, border-color 180ms ease,
+		transform 180ms ease;
+}
+
+.button-secondary:hover {
+	background: var(--surface-2);
+}
+
+.field-label {
+	display: block;
+	font-size: 0.9rem;
+	font-weight: 600;
+	margin-bottom: 0.45rem;
+	color: var(--text);
+}
+
+.field-input {
+	width: 100%;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 0.9rem;
+	padding: 0.7rem 0.85rem;
+	color: var(--text);
+	font-size: 0.95rem;
+}
+
+.field-input::placeholder {
+	color: var(--muted);
+}
+
+.field-input:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+
+:focus-visible {
+	outline: 2px solid var(--brand);
+	outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+	.page-main {
+		padding: 6.6rem 2.2rem 2.8rem;
+	}
+
+	.section-stack {
+		gap: 1.8rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }

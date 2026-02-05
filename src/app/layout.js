@@ -1,9 +1,18 @@
-import { Inter } from "next/font/google";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
-import CursorTrail from "./components/CursorTrail";
 import PageTransition from "./components/PageTransition";
+import { ThemeProvider } from "./components/ThemeProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({
+	subsets: ["latin"],
+	variable: "--font-sans",
+});
+
+const cormorant = Cormorant_Garamond({
+	subsets: ["latin"],
+	weight: ["500", "600", "700"],
+	variable: "--font-display",
+});
 
 export const metadata = {
 	title: "Portfolio - Dan Block - Software Engineer",
@@ -13,12 +22,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
-			<body className={`${inter.className} overflow-x-clip`}>
-				<div className="flex flex-col min-h-screen">
-					<PageTransition>{children}</PageTransition>
-				</div>
-				<CursorTrail />
+		<html lang="en" suppressHydrationWarning>
+			<body className={`${manrope.variable} ${cormorant.variable} overflow-x-clip`}>
+				<ThemeProvider>
+					<div className="site-shell">
+						<PageTransition>{children}</PageTransition>
+					</div>
+				</ThemeProvider>
 			</body>
 		</html>
 	);

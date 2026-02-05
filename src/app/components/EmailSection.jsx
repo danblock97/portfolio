@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+
+import { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
@@ -12,10 +13,12 @@ const EmailSection = () => {
 	const [emailSubmitted, setEmailSubmitted] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
 	const [showConfirmation, setShowConfirmation] = useState(false);
+	const [errorMessage, setErrorMessage] = useState("");
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setIsLoading(true);
+		setErrorMessage("");
 
 		const data = {
 			name: e.target.name.value,
@@ -33,24 +36,20 @@ const EmailSection = () => {
 			);
 
 			if (response.status === 200) {
-				console.log("Message sent.");
 				setIsLoading(false);
 				setEmailSubmitted(true);
 				setShowConfirmation(true);
-
-				// Reset form
 				e.target.reset();
 			}
 		} catch (error) {
 			console.error("Error sending email:", error);
 			setIsLoading(false);
-			// You could add error handling here with another modal
+			setErrorMessage("Message failed to send. Please try again.");
 		}
 	};
 
 	const handleCloseConfirmation = () => {
 		setShowConfirmation(false);
-		// Reset the submitted state after animation
 		setTimeout(() => {
 			setEmailSubmitted(false);
 		}, 500);
@@ -58,37 +57,42 @@ const EmailSection = () => {
 
 	return (
 		<>
-			<section
-				id="contact"
-				className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
-			>
-				<div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-				<div className="z-10">
-					<h5 className="text-xl font-bold text-white my-2">
-						Let&apos;s Connect
-					</h5>
-					<p className="text-[#ADB7BE] mb-4 max-w-md">
-						{" "}
-						I'm currently looking for new opportunities, my inbox is always
-						open. Whether you have a question or just want to say hi, I'll try
-						my best to get back to you!
+			<section id="contact" className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+				<div className="space-y-5">
+					<h2 className="text-3xl font-semibold">Let&apos;s connect</h2>
+					<p className="section-copy max-w-md">
+						I&apos;m open to new opportunities. Whether you have a project in mind
+						or a question, I&apos;d be happy to hear from you.
 					</p>
-					<div className="socials flex flex-row gap-2">
-						<Link href="https://github.com/danblock97">
-							<Image src={GithubIcon} alt="Github Icon" />
+					<div className="flex items-center gap-2">
+						<Link
+							href="https://github.com/danblock97"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="surface-soft inline-flex h-11 w-11 items-center justify-center rounded-full"
+						>
+							<Image src={GithubIcon} alt="GitHub" className="h-5 w-5" />
 						</Link>
-						<Link href="https://www.linkedin.com/in/dan-block-mbcs-40756b18a/">
-							<Image src={LinkedinIcon} alt="Linkedin Icon" />
+						<Link
+							href="https://www.linkedin.com/in/dan-block-mbcs-40756b18a/"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="surface-soft inline-flex h-11 w-11 items-center justify-center rounded-full"
+						>
+							<Image src={LinkedinIcon} alt="LinkedIn" className="h-5 w-5" />
 						</Link>
 					</div>
+					{emailSubmitted && (
+						<p className="text-sm text-[var(--brand)]">
+							Thanks, your message has been sent.
+						</p>
+					)}
 				</div>
-				<div>
-					<form className="flex flex-col" onSubmit={handleSubmit}>
-						<div className="mb-6">
-							<label
-								htmlFor="name"
-								className="text-white block mb-2 text-sm font-medium"
-							>
+
+				<div className="surface-soft p-5 sm:p-6">
+					<form className="grid gap-4" onSubmit={handleSubmit}>
+						<div>
+							<label htmlFor="name" className="field-label">
 								Your name
 							</label>
 							<input
@@ -96,16 +100,13 @@ const EmailSection = () => {
 								type="text"
 								id="name"
 								required
-								className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-								placeholder="Your Name..."
+								className="field-input"
+								placeholder="Jane Doe"
 								disabled={isLoading}
 							/>
 						</div>
-						<div className="mb-6">
-							<label
-								htmlFor="email"
-								className="text-white block mb-2 text-sm font-medium"
-							>
+						<div>
+							<label htmlFor="email" className="field-label">
 								Your email
 							</label>
 							<input
@@ -113,16 +114,13 @@ const EmailSection = () => {
 								type="email"
 								id="email"
 								required
-								className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-								placeholder="Your Email..."
+								className="field-input"
+								placeholder="you@example.com"
 								disabled={isLoading}
 							/>
 						</div>
-						<div className="mb-6">
-							<label
-								htmlFor="subject"
-								className="text-white block text-sm mb-2 font-medium"
-							>
+						<div>
+							<label htmlFor="subject" className="field-label">
 								Subject
 							</label>
 							<input
@@ -130,41 +128,42 @@ const EmailSection = () => {
 								type="text"
 								id="subject"
 								required
-								className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-								placeholder="Your Subject..."
+								className="field-input"
+								placeholder="Project inquiry"
 								disabled={isLoading}
 							/>
 						</div>
-						<div className="mb-6">
-							<label
-								htmlFor="message"
-								className="text-white block text-sm mb-2 font-medium"
-							>
+						<div>
+							<label htmlFor="message" className="field-label">
 								Message
 							</label>
 							<textarea
 								name="message"
 								id="message"
-								className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-								placeholder="Your Message"
+								className="field-input min-h-[7.5rem]"
+								placeholder="Tell me a bit about your project"
 								disabled={isLoading}
 							/>
 						</div>
+
+						{errorMessage && (
+							<p className="text-sm text-red-500" role="alert">
+								{errorMessage}
+							</p>
+						)}
+
 						<button
 							type="submit"
 							disabled={isLoading}
-							className="bg-primary-500 hover:bg-primary-600 disabled:bg-gray-600 disabled:cursor-not-allowed text-white font-medium py-2.5 px-5 rounded-lg w-full transition-colors duration-300"
+							className="button-primary w-full disabled:cursor-not-allowed disabled:opacity-70"
 						>
-							{isLoading ? "Sending..." : "Send Message"}
+							{isLoading ? "Sending..." : "Send message"}
 						</button>
 					</form>
 				</div>
 			</section>
 
-			{/* Loading Animation */}
 			<EmailSendingLoader isVisible={isLoading} />
-
-			{/* Success Confirmation */}
 			<EmailConfirmation
 				isVisible={showConfirmation}
 				onClose={handleCloseConfirmation}
