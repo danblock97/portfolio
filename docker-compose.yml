@@ -1,0 +1,11 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: portfolio:latest
+    restart: unless-stopped
+    expose:
+      - "80"
+    ports:
+      - "80"
